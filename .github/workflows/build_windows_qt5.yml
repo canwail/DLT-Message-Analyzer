@@ -116,3 +116,9 @@ jobs:
         jom.exe -j8
       shell: cmd
       working-directory: ..\build
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-artifact
+        path: ..\build\
