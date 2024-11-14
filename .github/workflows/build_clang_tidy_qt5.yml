@@ -92,3 +92,9 @@ jobs:
       run: make -k -j8
       shell: bash
       working-directory: ../build
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-artifact
+        path: ../build/
