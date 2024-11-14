@@ -70,7 +70,7 @@ jobs:
     - name: Checkout of the project
       uses: actions/checkout@v3
       with:
-        repository: svlad-90/${{ github.event.repository.name }}
+        repository: ${{ github.repository_owner }}/${{ github.event.repository.name }}
         path: .\plugin\${{ github.event.repository.name }}
         ref: ${{ github.ref }}
 
