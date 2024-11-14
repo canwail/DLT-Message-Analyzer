@@ -118,7 +118,7 @@ jobs:
       working-directory: ..\build
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: build-artifact
         path: D:\a\DLT-Message-Analyzer\build\bin\plugins\DLT-Message-Analyzer.dll
